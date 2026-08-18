@@ -1,0 +1,8 @@
+DirectoryIndex index.html
+AddType text/html .html .htm
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|htm)$">
+    Header always set Content-Type "text/html; charset=UTF-8"
+    Header always set Content-Disposition "inline"
+  </FilesMatch>
+</IfModule>
